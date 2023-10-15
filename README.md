@@ -12,3 +12,6 @@ docker compose up --build
 ```
 response = requests.post('http://ml:7777/send', files=files)
 ```
+
+## Для активации deeppavlolv нужно раскоментировать строки 
+P.S. Нужно 3 гиг видеопамяти
