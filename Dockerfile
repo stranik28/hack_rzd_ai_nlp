@@ -20,4 +20,6 @@ COPY . /app
 
 WORKDIR /app
 
+RUN python -m deeppavlov install ner_rus
+
 CMD ["sh", "-c" ,"python3 -m alembic upgrade head && python3 -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload"]
